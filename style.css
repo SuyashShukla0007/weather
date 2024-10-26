@@ -1,12 +1,14 @@
 * {
     padding: 0px;
-    margin: 0;
+    margin-top: 0;
 
 }
 
 
 #nav {
-    height: 160px;
+    margin-top: 0;
+    padding: 6rem;
+    height: 200px;
     background-color: black;
     color: white;
     display: flex;
@@ -79,9 +81,128 @@ body {
 
 .c {
     display: flex;
+    margin-left: 20vw;
+    width:60vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 80vh;
 
+}* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+#nav {
+    height: 160px;
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #444;
+}
+
+input {
+    margin-top: 20px;
+    border: 2px solid #444;
+    text-align: center;
+    width: 30vw;
+    max-width: 400px;
+    color: #121212;
+    background-color: #f5f5f5;
+    height: 35px;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ff9800;
+}
+
+button {
+    width: 60px;
+    height: 35px;
+    background-color: #ff9800;
+    border: none;
+    border-radius: 5px;
+    color: #121212;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e68900;
+}
+
+.rotating-image {
+    animation: rotate 4s linear infinite;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    width: 100px; /* Adjust as per the desired size */
+    height: 100px; /* Adjust as per the desired size */
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+div {
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#display {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border: 2px solid #ff9800;
+    height: 40vh;
+    background-color: #212121;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.grid {
+    border: 2px solid #444;
+    background-color: #333;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff9800;
+    font-size: 1.2rem;
+}
+
+.c {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    text-align: center;
+    gap: 20px;
 }
