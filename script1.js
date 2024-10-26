@@ -5,7 +5,7 @@ async function weather() {
         let humid = document.getElementById("hum");
 
         let city = document.getElementById("city");
-        let response = await fetch(`http://api.weatherapi.com/v1/current.json?key=449f7cdefd2544279ee45045240302&q=${c}&aqi=no`
+        let response = await fetch(`https://api.weatherapi.com/v1/current.json?key=449f7cdefd2544279ee45045240302&q=${c}&aqi=no`
         );
         let state = document.getElementById("state");
 
